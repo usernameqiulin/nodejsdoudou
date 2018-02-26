@@ -1,0 +1,102 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img,th,td,dl,dd,form,fieldset,legend,input,textarea,select{ margin:0; padding:0; }
+body{font-size: 12px;font-family: "微软雅黑";}
+a{text-decoration: none;}
+li{list-style: none;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+img{border: none;display: block;}
+h1,h2,h3,h4,h5,h6{font-size:18px;font-weight:normal;}
+/*======================公共样式设置上=========================*/
+.left{float:left}
+.right{float: right;}
+
+.logo,.nav,.top1,.top2,.new1,.new2,.bottom,.footer{margin: 0 auto;}
+#logo,#nav,#top1,#top2,#new1,#new2,#bottom,#footer{width: 100%;}
+
+.clear-border-right{
+	border-right:none ;
+}
+.clear-border-bottom{
+	border-bottom:none ;
+}
+/*==================公共样式设置下=======================*/
+
+/*========================logo=======================*/
+#logo{
+	height:px;
+}
+#logo .logo{
+	width:1000px;
+	height:px;
+	background:antiquewhite;
+}
+/*==========================nav========================*/
+#nav{
+	height:px;
+}
+#nav .nav{
+	width:1000px;
+	height:px;
+	background:cornflowerblue;
+}
+/*=========================banner=======================*/
+#banner{
+	height:px;
+}
+#banner img{
+	width:100%;
+}
+/*==========================top1=======================*/
+#top1{
+	height:px;
+}
+#top1 .top1{
+	width:1000px;
+	height:px;
+	background:antiquewhite;
+}
+/*==========================top2=======================*/
+#top2{
+	height:px;
+}
+#top2 .top2{
+	width:1000px;
+	height:px;
+	background:cornflowerblue;
+}
+/*==========================new1=======================*/
+#new1{
+	height:px;
+}
+#new1 .new1{
+	width:1000px;
+	height:px;
+	background:antiquewhite;
+}
+/*=========================new2=======================*/
+#new2{
+	height:px;
+}
+#new2 .new2{
+	width:1000px;
+	height:px;
+	background: aquamarine;
+}
+/*=========================bottom======================*/
+#bottom{
+	height:px;
+}
+#bottom .bottom{
+	width:1000px;
+	height:px;
+	background:cornflowerblue;
+}
+/*==========================footer=======================*/
+#footer{
+	height:px;
+}
+#footer .footer{
+	width:1000px;
+	height:px;
+	background: chocolate;
+}
