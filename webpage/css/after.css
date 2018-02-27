@@ -1,0 +1,90 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img,th,td,dl,dd,form,fieldset,legend,input,textarea,select{ margin:0; padding:0; }
+body{font-size: 12px;font-family: "微软雅黑";}
+a{text-decoration: none;}
+li{list-style: none;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+img{border: none;display: block;}
+h1,h2,h3,h4,h5,h6{font-size:18px;font-weight:normal;}
+/*======================公共样式设置上=========================*/
+.left{float:left}
+.right{float: right;}
+
+.logo,.nav,.content{margin: 0 auto;}
+#logo,#nav,#content{width: 100%;}
+.clear-border-right{
+	border-right:none ;
+}
+.clear-border-bottom{
+	border-bottom:none ;
+}
+/*==================公共样式设置下=======================*/
+/*==========================logo========================*/
+#logo{
+	background: #303030;
+    height: 76px;
+}
+.h1{
+	float: left;
+	margin-left: 30px;
+    margin-top: 20px;
+    width: 262px;
+    height: 45px;
+    float: left;
+}
+ .logo-nav{
+	float: right;
+    text-align: center;
+    width: 1000px;
+    position: absolute;
+    right: 0px;
+    height: 75px;
+}
+ .logo-nav ul li {
+ 	float: right;
+    width: 82px;
+    height: 82px;
+ 	}
+.logo-nav ul li a {
+    text-align: center;
+    height: 67px;
+    width: 82px;
+    padding-top: 8px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+ 	}
+.logo-nav ul li a img {
+    margin: auto;
+    display: block;
+    height: 35px;
+ 	}
+ .logo-nav ul li a span{
+    margin-top: 6px;
+    display: block;
+    font-size: 12px;
+}
+ .logo-nav ul li .last span{
+      color: #ff0;
+    width: 84px;
+    font-weight: bold;
+}
+ 	
+
+/*==========================nav========================*/
+#nav{
+	background: #575757;
+    height: 41px;
+    border-bottom: 1px solid #212121;
+}
+
+
+/*==========================content=======================*/
+#content{
+	height:px;
+}
+#content .content{
+	width:1000px;
+	height:px;
+	background:antiquewhite;
+}
