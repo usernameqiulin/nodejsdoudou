@@ -4,92 +4,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>pc端</title>
-		<link rel="stylesheet" href="css/after.css" />
-<!--=============================logo==================-->
-		<div id="logo">
-			<div class="h1">
-				<img src="img/hlogo.png" alt="logo">
-			</div>
-				<div class="logo-nav">
-					<ul>
-						<li>
-							<a>
-								<img src="img/01.png" >
-								<span>退出</span>
-								
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/02.png" >
-								<span>清除缓存</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/03.png" >
-								<span>关于  ECSHOP</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/04.png" >
-								<span>帮助</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/05.png" >
-								<span>查看网店</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/06.png" >
-								<span>管理员留言</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/07.png" >
-								<span>个人设置</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/08.png" >
-								<span>刷新</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/09.png" >
-								<span>记事本</span>
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="img/10.png" >
-								<span>开店向导</span>
-							</a>
-						</li>
-						<li style="width:92px;border-left:none;">
-							<a class="last">
-								<img src="img/11.png" >
-								<span >更多模版堂产品</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-		</div>
-<!--=============================nav==================-->
-		<div id="nav">
-			
-		</div>
-<!--============================content==================-->
-		<div id="content">
-			<div class="content"></div>
-		</div>
-
-	</body>
+	</head>
+	<frameset rows="118,*" framespacing="0" border="0">
+		<frame src="top.html" id="header-frame" name="header-frame" frameborder="no" scrolling="no" style="background:#212121;">
+		<frameset cols="180, 10, *" framespacing="0" border="0" id="frame-body">
+		   			<frame src="navmenu.html" id="menu-frame" name="menu-frame" frameborder="no" scrolling="yes">
+		   			<frame src="small.html" id="drag-frame" name="drag-frame" frameborder="no" scrolling="no">
+		   			<frame src="new.html" id="main-frame" name="main-frame" frameborder="no" scrolling="yes">
+		  </frameset>
+		  </frameset>
 </html>
