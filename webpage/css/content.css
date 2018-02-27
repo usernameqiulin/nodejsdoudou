@@ -27,12 +27,24 @@ h1,h2,h3,h4,h5,h6{font-size:18px;font-weight:normal;}
     list-style-type: none;
     color: #335B64;
 }
+.menu-list ul ul {
+	/*display: none;*/
+}
 .menu-list ul li {
+	display: block;
+    border-top: #7f7f7f 1px solid;
+    width: 100%;
+    color: #FFF;
+    line-height: 42px;
+    text-align: left;
 	text-indent: 40px;
 	width: 100%;
 	padding: 0;
     margin: 0;
     list-style-type: none;
     color: #fff;
-    background:url(../img/menulist1.png) 9px 0px no-repeat #454545;
+}
+.menu-list ul .hbj1{
+    background:url(../img/menulist1.png) 9px 0px no-repeat #575757;
+
 }
