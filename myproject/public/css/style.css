@@ -1,0 +1,213 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img,th,td,dl,dd,form,fieldset,legend,input,textarea,select{ margin:0; padding:0; }
+body{font-size: 12px;font-family: "微软雅黑";}
+a{text-decoration: none;}
+li{list-style: none;}
+input, textarea {
+    outline: 0;
+}
+input, textarea, select, button {
+    font: 12px Microsoft Yahei, "courier new";
+}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+img{border: none;display: block;}
+h1,h2,h3,h4,h5,h6{font-size:18px;font-weight:normal;}
+/*======================公共样式设置上=========================*/
+.left{float:left}
+.right{float: right;}
+body,html{
+	width: 100%;
+    height: 100%;
+}
+.content{margin: 0 auto;}
+.box{
+	width: 100%;
+    height: 100%;
+    background: #555 url(../img/bj.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+	}
+/*========================logo=======================*/
+.logo{
+	background: none;
+    height: 44px;
+    padding: 40px 0 40px 50px;
+}
+
+/*========================content=======================*/
+.content{
+	position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 475px;
+    height: 507px;
+    margin: auto ;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*background: #30759f52;*/
+}
+.content .top{
+	width: 380px;
+    margin: 0 auto;
+}
+.content .top img{
+	width: 248px;
+    height: 65px;
+    margin-left: 66px;
+}
+
+
+.content .form {
+	position: relative;
+    overflow: hidden;
+    padding-bottom: 42px;
+    height: 350px;
+    background: url(../img/xia.png) no-repeat 0 bottom;
+    margin-top: 50px;
+}
+.content .form .tab{
+	position: absolute;
+    left: 16px;
+    z-index: 2;
+    width: 302px;
+    height: 321px;
+    background: #fff;
+    background: rgba(255,255,255,.85);
+    border: none;
+    border-radius: 0;
+    color: #A1A1A1;
+    padding: 5px 70px 25px;
+    overflow: hidden;
+    box-shadow: 5px 2px 20px rgba(0,0,0,.3);
+    height: 322px;
+}
+.content .form .tab  .h3{
+    padding-bottom: 10px;
+    line-height: 1;
+    font-size: 18px;
+    margin: 18px 0;
+    text-align: center;
+    font-weight: normal;
+}
+.content .form .tab  .hh3{
+       color: #41A5E1 !important;
+}
+
+
+
+.content .form .tab .fdiv{
+	position: relative;
+    height: 51px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.content .form .tab .first{
+	border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font_jycigxq7gfvl5wmi/iconfont.eot');
+  src: url('../font_jycigxq7gfvl5wmi/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font_jycigxq7gfvl5wmi/iconfont.woff') format('woff'),
+  url('../font_jycigxq7gfvl5wmi/iconfont.ttf') format('truetype'),
+  url('../font_jycigxq7gfvl5wmi/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:22px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    z-index: 10;  
+}
+.iconuse{
+	display: block;
+	margin-bottom: 5px;
+}
+input[type=text], input[type=password] {
+    -webkit-appearance: none;
+    border: none;
+    background-color: #fff;
+    color: #8a8a8a;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    text-indent: 50px;
+    box-shadow: inset 30px 30px 0 30px #fff;
+    outline:none;
+}
+.thired img{
+	position: absolute;
+    right: 8px;
+    top: 8px;
+	width: 102px;
+    height: 34px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.btn{
+	cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #fc7878;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    outline:none;
+}
+.bside{
+	margin-top: 12px;
+    overflow: hidden;
+    height: auto;
+}
+.bside input[type="checkbox"] {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 2px 8px 0 0;
+}
+.bside label {
+    color: #666;
+    float: left;
+}
+.bside .link-forget {
+    float: left;
+    margin-left: 25px;
+}
+
+.bside a {
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+a:link {
+    color: #335B64;
+    text-decoration: none;
+}
+.cl-link-blue {
+    color: #41A5E1 !important;
+}
