@@ -100,6 +100,8 @@ h1{
     text-align: center;
     font-weight: bold;
     cursor: hand;
+    color: #000;
+    font-size: 12px;
     cursor: pointer;
 }
 .tabbody{
@@ -229,4 +231,18 @@ th {
 em, cite, th {
     font-style: normal;
     font-weight: normal;
+}
+.list-div table {
+    width: 100%;
+    background: #ddd;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.list-div th {
+    line-height: 39px;
+    background: #f3f3f3 url(../images/th_bg.gif) repeat-x;
+    white-space: nowrap;
 }

@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/new.css">
 </head>
+
 <body>
 	<h1>
 		<span class="shoplist">
@@ -25,7 +26,7 @@
 	<div class="tab-div">
 		<div class="tab-div-new">
      		 <p>
-       			 <span class="tab-front" id="tab1">通用信息</span>
+       			 <span class=" tab-back tab-front" id="tab1">通用信息</span>
        			 <span class="tab-back" id="tab2">详细描述</span>
        			 <span class="tab-back" id="tab3">其他信息</span>
        			 <span class="tab-back" id="tab4">商品属性</span>
@@ -37,7 +38,7 @@
    		 </div>
    		 <div class="tabbody">
    		 	<form>
-   		 		<table width="90%"  align="center" class="form-table01" style="display: table;">
+   		 		<table width="90%"  align="center" class="form-table01 table-one" style="display: table;">
    		 			<tr>
    		 				<td class="lable">商品名称 :  &nbsp;	</td>
    		 				<td >
@@ -60,7 +61,7 @@
             	<img src="img/xiang.gif" class="xiang">
             商品货号： 
         </td>
-            <td>
+            <td>右
             	<input type="text" name="goods_sn" value="" size="20" >
             	<span id="goods_sn_notice"></span><br>
             	<span class="notice-span" style="display:block" id="noticeGoodsSN">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>
@@ -374,12 +375,16 @@
 
          </table>
 <!-- ================================================================================== -->
-<table width="90%" id="detail-table" style="display: block;">
+<table width="90%"  align="center" class="form-table01 table-three" style="display: none;">
+	<tr>
+		<td >
 	<img src="img/miaoshu.png" id="bigimg">
+		</td>
+	</tr>
          </table>
 
          <!--================================================================================== -->
-<table width="90%"  align="center" class="form-table01" style="display: table;">
+<table width="90%"  align="center" class="form-table01 table-three" style="display: none;">
    		 			<tr>
    		 				<td class="lable">商品重量:  &nbsp;	</td>
    		 				<td>
@@ -456,7 +461,7 @@
           </tr>                    
          </table>
    <!--================================================================================== -->
-         <table width="90%"  align="center" class="form-table01" style="display: table;">
+         <table width="90%"  align="center" class="form-table01 table-for" style="display: none;">
    		 			<tr>
    		 				<td class="lable">商品重量:  &nbsp;	</td>
    		 				<td>
@@ -472,7 +477,7 @@
 			
 
  <!--================================================================================== -->
-         <table width="90%"  align="center" class="form-table01" style="display: table;">
+         <table width="90%"  align="center" class="form-table01 table-five" style="display: none;">
    		 			<tr>
             <td>
               <a href="javascript:;" onclick="addImg(this)">[+]</a>
@@ -487,7 +492,7 @@
 
 
 <!--================================================================================== -->
-         <table width="90%"  align="center" class="form-table01" style="display: table;">
+         <table width="90%"  align="center" class="form-table01 table-six" style="display: none;">
    		 			<tr>
    		 				
             <td colspan="3">
@@ -523,7 +528,7 @@
           </tr>
          </table>         			
          <!--================================================================================== -->
-         <table width="90%"  align="center" class="form-table01" style="display: table;">
+         <table width="90%"  align="center" class="form-table01 table-seven" style="display: none;">
    		 			<tr>
    		 				
             <td colspan="3">
@@ -558,7 +563,7 @@
           </tr>
          </table>         			
   <!--================================================================================== -->
-         <table width="90%"  align="center" class="form-table01" style="display: table;">
+         <table width="90%"  align="center" class="form-table01 table-eight" style="display: none;">
    		 			<tr>
    		 				
             <td colspan="3">
@@ -589,29 +594,8 @@
                               </select>
             </td>
           </tr>
-         </table>         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <div class="button-div">
+         </table>
+        <div class="button-div">
           <input type="hidden" name="goods_id" value="0">
                     <input type="button" value=" 确定 " class="button" onclick="validate('0')">
           <input type="reset" value=" 重置 " class="button">
@@ -621,6 +605,9 @@
 	</div>
 	<div id="footer">
 共执行 9 个查询，用时 0.023899 秒，Gzip 已禁用，内存占用 3.590 MB<br>
-版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</div>·
+版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。</div>
 </body>
 </html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/new.js"></script>
+
