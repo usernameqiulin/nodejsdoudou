@@ -9,6 +9,27 @@ var UserModel = require("../model/UserModel");
 router.get('/', function(req, res){
 	res.render("login", {});
 })
+router.get('/after', function(req, res){
+	res.render("after", {});
+})
+router.get('/top', function(req, res){
+	res.render("top", {});
+})
+router.get('/navmenu', function(req, res){
+	res.render("navmenu", {});
+})
+router.get('/small', function(req, res){
+	res.render("small", {});
+})
+router.get('/new', function(req, res){
+	res.render("new", {});
+})
+router.get('/shoptab', function(req, res){
+	res.render("shoptab", {});
+})
+router.get('/newcontent', function(req, res){
+	res.render("newcontent", {});
+})
 
 router.post("/api/login", function(req, res) {
 	var username = req.body.username;
