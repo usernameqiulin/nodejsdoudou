@@ -10,8 +10,9 @@
 
 	<body>
 		<h1>
+
 		<span class="shoplist">
-			<a href="#">添加新商品</a>
+			<a href="http://localhost:8080/new">添加新商品</a>
 		</span>
 		<span class="man-center">
 			<a href="#">ECSHOP	管理中心</a>
@@ -738,15 +739,15 @@
 						<tr>
 							<th>
 								<input onclick="listTable.selectAll(this, &quot;checkboxes&quot;)" type="checkbox">
-								<a href="javascript:listTable.sort('goods_id'); ">编号</a><img src="img/selector.gif"> </th>
+								<a href="#">编号</a><img src="img/selector.gif"> </th>
 							<th>
-								<a href="javascript:listTable.sort('goods_name'); " title="点击对列表排序">商品名称</a>
+								<a href="#" title="点击对列表排序">商品名称</a>
 							</th>
 							<th>
-								<a href="javascript:listTable.sort('goods_sn'); " title="点击对列表排序">货号</a>
+								<a href="#" title="点击对列表排序">货号</a>
 							</th>
 							<th>
-								<a href="javascript:listTable.sort('shop_price'); " title="点击对列表排序">价格</a>
+								<a href="#" title="点击对列表排序">价格</a>
 							</th>
 							<th>
 								<a href="javascript:listTable.sort('is_on_sale'); " title="点击对列表排序">上架</a>
@@ -773,12 +774,12 @@
 						</tr>
 						<tr>
 						</tr>
+						<% for(var i=0;i<title.length;i++) {%>
 						<tr>
 							<td style="background-color: rgb(255, 255, 255);"><input type="checkbox" name="checkboxes[]" value="258">258</td>
-							<td class="first-cell" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_name', 258)" title="点击修改内容" style="">哈哈</span></td>
+							<td class="first-cell" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_name', 258)" title="点击修改内容" style=""><%=title[i].shopname%></span></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_sn', 258)" title="点击修改内容" style="">ECS000258</span></td>
-							<td align="center" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_price', 258)" title="点击修改内容" style="">0.00
-    </span></td>
+							<td align="center" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_price', 258)" title="点击修改内容" style=""><%=title[i].shopprice%></span></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);"><img src="img/no.gif"></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);"><img src="img/no.gif" ></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);"><img src="img/no.gif"></td>
@@ -787,11 +788,14 @@
 							<td align="center" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_number', 258)">1</span></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_virtual_sales', 258)">0</span></td>
 							<td align="center" style="background-color: rgb(255, 255, 255);">
-								<a href="#" target="_blank" title="查看"><img src="img/c1.gif" width="21" height="21" border="0"></a>
+								<a href="#"  title="查看"><img src="img/c1.gif" width="21" height="21" border="0"></a>
 								<a href="#" title="编辑"><img src="img/c2.gif" width="21" height="21" border="0"></a>
 								<a href="#" title="复制"><img src="img/c3.gif" width="21" height="21" border="0"></a>
 								<a href="javascript:;" onclick="listTable.remove(258, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="img/c4.gif" width="21" height="21" border="0"></a>
 								<img src="img/c5.gif" width="21" height="21" border="0"> </td>
+							</tr>
+							<%}%>
+
 				</table>
 				<!-- end goods list -->
 
@@ -821,7 +825,7 @@
 
 			<div>
 				<input type="hidden" name="act" value="batch">
-				<select name="type" id="selAction" onchange="changeAction()">
+				<select name="type" id="selAction" >
 					<option value="">请选择...</option>
 					<option value="trash">回收站</option>
 					<option value="on_sale">上架</option>
