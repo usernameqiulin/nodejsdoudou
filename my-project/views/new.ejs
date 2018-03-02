@@ -6,11 +6,10 @@
 		<title>Document</title>
 		<link rel="stylesheet" type="text/css" href="css/new.css">
 	</head>
-
 	<body>
 		<h1>
 		<span class="shoplist">
-			<a href="#">商品列表</a>
+			<a href="http://localhost:8080/shoptab">商品列表</a>
 		</span>
 		<span class="man-center">
 			<a href="#">ECSHOP	管理中心</a>
@@ -61,7 +60,7 @@
 							<td class="lable ">
 								<img src="img/xiang.gif" class="xiang"> 商品货号：
 							</td>
-							<td>右
+							<td>
 								<input type="text" name="goods_sn" value="" size="20">
 								<span id="goods_sn_notice"></span><br>
 								<span class="notice-span" style="display:block" id="noticeGoodsSN">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>
@@ -768,7 +767,7 @@
 						<tr>
 							<td class="lable">本店售价 : &nbsp; </td>
 							<td>
-								<input type="text" name="shop_price" value="0" size="20" onblur="priceSetted()">
+								<input type="text" name="shop_price" value="0" size="20" class="shopprice">
 								<input type="button" value="按市场价计算" onclick="marketPriceSetted()">
 								<span class="require-field">*</span>
 							</td>
@@ -805,7 +804,7 @@
 						<tr>
 							<td class="lable">市场售价 : &nbsp; </td>
 							<td>
-								<input type="text" name="shop_price" value="0" size="20" onblur="priceSetted()">
+								<input type="text" name="shop_price" value="0" size="20" >
 								<input type="button" value="取整数" onclick="marketPriceSetted()">
 							</td>
 						</tr>
@@ -2470,7 +2469,7 @@
 					</table>
 					<div class="button-div">
 						<input type="hidden" name="goods_id" value="0">
-						<input type="button" value=" 确定 " class="button" onclick="validate('0')">
+						<input type="button" value=" 确定 " class="button" >
 						<input type="reset" value=" 重置 " class="button">
 					</div>
 				</form>
@@ -2482,17 +2481,4 @@
 
 </html>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
-
-<script>
-	$(".tab-div-new p span").click(function() {
-		$(this).addClass('tab-front')
-			.siblings()
-			.removeClass('tab-front');
-		var index = $(this).index();
-		$(".form-table01").eq(index).css("display", "table")
-			.siblings()
-			.css("display", "none");
-		$(".button-div").css("display", "block");
-
-	});
-</script>
+<script type="text/javascript" src="/js/new.js"></script>
