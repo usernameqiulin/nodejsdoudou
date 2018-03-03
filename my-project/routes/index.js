@@ -26,16 +26,33 @@ router.get('/new', function(req, res){
 	res.render("new", {});
 })
 router.get('/shoptab', function(req, res){
-	var query = GoodsModel.find({},function(err,results){
-	res.render("shoptab", {title: results});
-	})
+	var pageNo = parseInt(req.query.pageNo || 1);
+	var count = parseInt(req.query.count || 5);
+
+	var query = GoodsModel.find({}).skip((pageNo-1)*count).limit(count).sort({date:-1});
+	query.exec(function(err,results){
+		var numbers = GoodsModel.find({}, function(err, docs){
+		 numbers = docs.length;
+		res.render("shoptab", {title: results,pageNo:pageNo,count:count,numbers:numbers});
+	});
+	});
 })
-/*router.get('/shoptab', function(req, res){
-	
-	res.render("shoptab", {list: results});
-})*/
+
 router.get('/newcontent', function(req, res){
 	res.render("newcontent", {});
+})
+router.get('/api/goods_del', function(req, res){
+	GoodsModel.findByIdAndRemove({_id:req.query.gid},function(err){
+		var result = {
+			status: 1,
+			message:"商品删除成功"
+		};
+		if(err){
+			result.status = -119;
+			tesult.message = "删除失败";
+		}
+		res.send(result);
+	})
 })
 
 router.post("/api/login", function(req, res) {
@@ -67,15 +84,6 @@ router.post("/api/new", function(req, res){
 	// 所有的post参数都被包装到req.body中
 	var shopname = req.body.shopname;
 	var shopprice = req.body.shopprice;
-	
-	 // GoodsModel.find({shopname: shopname,shopprice: shopprice}, function(err, docs) {
- 	// 	 var um = new GoodsModel();
- 	// 	 alert(um.shopname);
- 	// 	 alert(um.shopprice);
- 	// })
-
-
-
 		// 保存功能 (mongodb的调用使用mongoose组件)
 		var um = new GoodsModel();
 		um.shopname = shopname;
@@ -88,11 +96,21 @@ router.post("/api/new", function(req, res){
 				res.send(result);
 			} 
 		})
-		/*var query = GoodsModel.collection({shopname,shopprice},function(err,docs){
-			alert(docs);
+		
 
-		});*/
+	})
+router.post("/api/shoptab", function(req, res){
+	var souname = req.body.souname;
 
+	Model.find({username: new RegExp("商品")},function(err,results){
+	res.render("shoptab", {title: results});
+	});
+
+/*
+	GoodsModel.find({},function(err,results){
+	res.render("shoptab", {title: results});
+	});
+*/
 	})
 
 

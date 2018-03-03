@@ -18,9 +18,7 @@ $(".button").click(function(){
 				shopprice: $(".shopprice").val()
 			},
 			success: function(res) {
-				// query.exec(docs){
 				console.log(res);
-				// }
 				}
 		
 		})
