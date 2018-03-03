@@ -84,6 +84,18 @@ router.post("/api/new", function(req, res){
 	// 所有的post参数都被包装到req.body中
 	var shopname = req.body.shopname;
 	var shopprice = req.body.shopprice;
+<<<<<<< HEAD
+=======
+	
+	 // GoodsModel.find({shopname: shopname,shopprice: shopprice}, function(err, docs) {
+ 	// 	 var um = new GoodsModel();
+ 	// 	 alert(um.shopname);
+ 	// 	 alert(um.shopprice);
+ 	// })
+
+
+
+>>>>>>> 03c6407366c02ffbe36f42e66881569f34a0ad05
 		// 保存功能 (mongodb的调用使用mongoose组件)
 		var um = new GoodsModel();
 		um.shopname = shopname;
@@ -96,6 +108,7 @@ router.post("/api/new", function(req, res){
 				res.send(result);
 			} 
 		})
+<<<<<<< HEAD
 		
 
 	})
@@ -111,6 +124,13 @@ router.post("/api/shoptab", function(req, res){
 	res.render("shoptab", {title: results});
 	});
 */
+=======
+		/*var query = GoodsModel.collection({shopname,shopprice},function(err,docs){
+			alert(docs);
+
+		});*/
+
+>>>>>>> 03c6407366c02ffbe36f42e66881569f34a0ad05
 	})
 
 
